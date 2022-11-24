@@ -1,27 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki&family=Poppins:wght@200&display=swap');
 
-/*Fonts: Noto Serif Khojki - Poppins*/
+/*Fontes: Noto Serif Khojki - Poppins*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
+  
   body {
-    background-image: url(../img/bgLuxury.jpg); 
+    background-image:  url(../img/minimal.jpg);
     background-size: cover;
     background-position: center;
   }
   
+  /*Início Navbar*/
+
   a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     transition: 0.3s;
   }
   
   a:hover {
-    color: rgb(250,251,205);
+    color: rgb(235, 215, 5);
     transition: 0.2s ease;
   }
   
@@ -29,6 +31,29 @@
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
+  }
+
+  #search{
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  #search:hover{
+    color: rgb(235, 215, 5);
+    transition: 0.2s ease;
+  }
+
+  #inputSearch{
+    width: 200px;
+    height: 25px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border: 0;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
   }
   
   nav {
@@ -89,7 +114,8 @@
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
-  
+
+  /*Início Home e cards*/
 
   .row{
     display: flex;
@@ -110,6 +136,7 @@
   h1{
     color: rgb(0, 0, 0);
     font-size: 60px;
+    font-family: 'Noto Serif Khojki', sans-serif;
   }
 
   h5{
@@ -119,37 +146,37 @@
     text-shadow: 0 2px 5px #000;
   }
 
-  p{
+  h2{
     color: #000;
     font-size: 25px;
-    font-weight: 600px;
-    line-height: 30px;
+    font-weight: bolder;
+    line-height: 25px;
     font-family: 'Poppins', sans-serif;
   }
 
   .p2{
     color: rgb(235, 215, 5);
     font-size: 20px;
-    font-weight: 600px;
+    font-weight: bolder;
     line-height: 30px;
     font-family: 'Poppins', sans-serif;
     text-shadow: 0 1px 5px #000;
   }
 
-  button{
+  .exploreBtn{
     width: 150px;
     color:#ffffff;
     font-size: 25px;
     font-family: "Poppins", sans-serif;
     padding: 12px 0;
-    background: rgb(218,203,146);
+    background: rgb(212,188,101);
     border: 0;
     border-radius: 20px;
     outline: none;
     margin-top: 20px;
     cursor: pointer;
   }
-  button:hover{
+  .exploreBtn:hover{
     color: rgb(171,163,74);
     background: #ffffff;
     transition: 0.10s ease-in-out;
@@ -224,14 +251,78 @@
     transform: translateY(-10px);
   }
 
+  /*Início Outdoor*/
+
+  .outdoor{
+    display: flex;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+
+  .outdoor img{
+    width: 100%;
+    margin: 20px;
+    height: 30rem;
+    border: #000;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+
+  .outdoor-text{
+    position: absolute;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.418);
+    margin-top: 400px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(235, 215, 5);
+    text-shadow: 0 1px 10px #000;
+    cursor: pointer;
+  }
+
+  .seemore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 50px;
+  }
+
+  .seemore button{
+    width: 150px;
+    color:#ffffff;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    padding: 12px 0;
+    background: rgb(212,188,101);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .seemore button:hover{
+    color: rgb(171,163,74);
+    background: #ffffff;
+    transition: 0.10s ease-in-out;
+  }
+
+    /*Início Footer*/
+
   .footer{
     display: flex;
     width: 100%;
-    height: 105px;
+    height: 115px;
     justify-content: center;
     justify-items: center;
     text-align: center;
-    background-color: #000;
+    background-color: rgb(0, 0, 0);
   }
 
   h6{
@@ -241,9 +332,7 @@
     font-family: 'Poppins', sans-serif;
   }
 
-  .linkedin{
-    color: #ffffff;
-  }
+  /*Início Media*/
 
   @media (max-width: 900px) {
     body {
@@ -289,6 +378,9 @@
     }
     .card4{
       height: 400px;
+    }
+    .outdoor-text{
+      margin-top: 370px;
     }
   }
 
