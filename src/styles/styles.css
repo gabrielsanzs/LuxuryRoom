@@ -154,6 +154,16 @@
     font-family: 'Poppins', sans-serif;
   }
 
+  h3{
+    color: #000;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: bolder;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
   .p2{
     color: rgb(235, 215, 5);
     font-size: 20px;
